@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon Resources - Material</title>
+            <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+            <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css" media="screen, projection">
+    </head>
+    
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        
+        <nav>
+            <div class="nav-wrapper blue-grey darken-2">
+                <a href = "index.html" class="brand-logo center">Pokemon Resources</a>
+                <ul id = "nav-mobile" class = "right hide-on-med-and-down">
+                   
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                <a class="btn-floating btn-large light-blue darken-3 waves-effect" href="index.html">
+                    <i class="large material-icons">refresh</i>
+                </a>
+            </div>
+            <div class="row">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text center">
+                        <span class="card-title">Enter Pokemon Name or Number</span>
+                        <div class = "input-field">
+                            <i class="material-icons prefix small">input</i>
+                            <input id = "pokeInput" placeholder="Pokemon Name / Number">
+                        </div>
+                        <button class="btn waves-effect waves-light light-blue darken-1" type="submit" id = "sumbitBtn">Get data
+                            <i class="material-icons right">get_app</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card light-blue hoverable darken-3 center" id = "dataPoke">
+                    <div class="card-content white-text">
+                        <span class="card-title"><h4 id = "name"></h4></span>
+                        <div class="row">
+                            <table class="centered">
+                                <tbody>
+                                    <tr>
+                                        <td><img id = "pokeImageFront" /></td>
+                                        <td><img id = "pokeImageBack" /></td>
+                                    </tr
+                                    <tr>
+                                        <td><h5>Type(s)</h5></td>
+                                        <td><h5 id = "type"></h5></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><h5>Pokedex No.</h5></td>
+                                        <td><h5 id = "id"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Speed</h5></td>
+                                        <td><h5 id = "speed"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Sp. Def.</h5></td>
+                                        <td><h5 id = "spdef"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Sp. Atk.</h5></td>
+                                        <td><h5 id = "spatk"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Defense</h5></td>
+                                        <td><h5 id = "def"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>Attack</h5></td>
+                                        <td><h5 id = "atk"></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>HP</h5></td>
+                                        <td><h5 id = "hp"></h5></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class = "page-footer blue-grey lighten-2 hoverable">
+            <div class="container">
+                <div class="row">
+                    <h5 class="white-text">Made by Lakshya Agarwal</h5>
+                    <p class="grey-text text-lighten-4">Website showcasing the use of <a class = "grey-text text-lighten-5" href = "https://materializecss.com/" target="_blank">MaterialzeCSS</a> & the RESTful <a class = "grey-text text-lighten-5" target="_blank" href = "https://pokeapi.co">PokeAPI</a>.</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                   &copy; XZYoda12 
+                <a class="grey-text text-lighten-4 right" href = "https://www.facebook.com/lakshya.agrwl">Facebook</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
